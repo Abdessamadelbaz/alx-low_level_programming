@@ -8,27 +8,26 @@
  */
 int main(void)
 {
-    char alphabet;
-    char upper;
+	char alphabet;
+	char upper;
 
-    alphabet = 'a';
+	alphabet = 'a';
 
-    while (alphabet <= 'z')
-    {
-        putchar(alphabet);
-        alphabet++;
-    }
+	while (alphabet <= 'z')
+	{
+		putchar(alphabet);
+		alphabet++;
+	}
 
-    upper = 'A';
+	upper = 'A';
 
-    while (upper <= 'Z')
-    {
-        putchar(upper);
-        upper++;
-    }
+	while (upper <= 'Z')
+	{
+		putchar(upper);
+		upper++;
+	}
 
-    putchar('\n');
+	putchar('\n');
 
-    return 0;
+	return (0);
 }
-
