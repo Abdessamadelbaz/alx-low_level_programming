@@ -1,26 +1,28 @@
-#include<stdio.h>
+#include <stdio.h>
 
 /**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
+*main -combinations of single-digit numbers separated with ','
+*
+* Return: 0
+*/
 int main(void)
 {
-	int number;
+	int number ;
 
 	number = 0;
 	while (number <= 9)
 	{
 		putchar('0' + number % 10);
-		if (number < 9)
-		{
+		 if(number < 9)
+			{
 			putchar(',');
-			putchar(' ');
-		}
-		number++;
+                	putchar(' ');
+			}
+		 number++;
 	}
 	putchar('\n');
 	return (0);
-
 }
+
+
+
