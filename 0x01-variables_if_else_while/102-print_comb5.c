@@ -1,9 +1,11 @@
-#include <unistd.h>
+#include <stdio.h>
 
 /**
- * ft_comb2 - Prints all possible combinations of two two-digit numbers
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
  */
-void ft_comb2(void)
+int main(void)
 {
 	int i = 0, j = 0;
 
@@ -26,15 +28,6 @@ void ft_comb2(void)
 		}
 		i++;
 	}
-}
-
-/**
- * main - Entry point
- *
- * Return: Always 0 (Success)
- */
-int main(void)
-{
-	ft_comb2();
+	putchar('\n');
 	return (0);
 }
