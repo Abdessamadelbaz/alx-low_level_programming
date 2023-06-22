@@ -1,31 +1,26 @@
 #include "main.h"
-
 /**
  * print_diagonal - print '\' n times
- * @n: parameter, number of times to print '\'
+ * @n: patametre n times to print
  */
 void print_diagonal(int n)
 {
+	int j, i;
+
 	if (n <= 0)
 	{
 		_putchar('\n');
 		return;
 	}
-
-	int i = 0;
-
-	while (i < n)
+	for (i = 0 ; i < n ; i++)
 	{
-		int j = 0;
-
-		while (j < i)
+		j = i;
+		while (j > 0)
 		{
-			_putchar(' ');
-			j++;
+			_putchar(32);
+			j--;
 		}
-
 		_putchar('\\');
 		_putchar('\n');
-		i++;
 	}
 }
